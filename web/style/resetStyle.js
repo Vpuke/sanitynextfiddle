@@ -90,6 +90,9 @@ h6 {
   font-weight: normal;
   font-size: 100%;
 }
+h1{
+  font-size: 40px;
+}
 
 q:before,
 q:after {

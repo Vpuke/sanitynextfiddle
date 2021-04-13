@@ -28,12 +28,14 @@ const Index = (props) => {
               slug && (
                 <div key={_id}>
                   <Link href={'/recipe/[slug]'} as={`/recipe/${slug.current}`}>
-                    <Image
-                      src={urlFor(mainImage.asset).url()}
-                      width={300}
-                      height={300}
-                      layout={'responsive'}
-                    />
+                    <a>
+                      <Image
+                        src={urlFor(mainImage.asset).url()}
+                        width={300}
+                        height={300}
+                        layout={'responsive'}
+                      />
+                    </a>
                   </Link>
                   <Link href={'/recipe/[slug]'} as={`/recipe/${slug.current}`}>
                     <a>

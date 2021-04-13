@@ -17,6 +17,7 @@ StyledHeader.LogoContainer = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
+  font-family: 'Bebas Neue', cursive;
 `
 
 StyledHeader.MenuContainer = styled.div`
