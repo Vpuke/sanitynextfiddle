@@ -20,6 +20,11 @@ const MobileMenu = (props) => {
         </li>
         <li>
           <Heading type={'h2'} size={1}>
+            <Link href='/recipes'>/ Recipes</Link>
+          </Heading>
+        </li>
+        <li>
+          <Heading type={'h2'} size={1}>
             <Link href='/about'>/ About</Link>
           </Heading>
         </li>

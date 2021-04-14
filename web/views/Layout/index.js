@@ -6,7 +6,7 @@ import { ResetStyle } from '../../style/resetStyle'
 import Head from 'next/head'
 
 const Layout = (props) => {
-  const { children } = props
+  const { children, setPaddingTop } = props
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ const Layout = (props) => {
       </Head>
       <ResetStyle />
       <Header />
-      <Container>
+      <Container paddingTop={setPaddingTop}>
         <Main>{children}</Main>
       </Container>
     </>
@@ -27,6 +27,7 @@ const Layout = (props) => {
 
 Layout.propTypes = {
   children: PropTypes.any,
+  setPaddingTop: PropTypes.bool,
 }
 
 export default Layout

@@ -1,7 +1,7 @@
-import Layout from '../views/Layout'
 import Heading from '../components/Heading'
+import Layout from '../views/Layout'
 
-const About = () => {
+const Recipes = () => {
   return (
     <Layout>
       <Heading type={'h1'} size={1}>
@@ -11,4 +11,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Recipes

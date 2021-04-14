@@ -20,7 +20,7 @@ StyledHeroSection.Content = styled.div`
 StyledHeroSection.Inner = styled.div`
   position: absolute;
   height: 200px;
-  width: 600px;
+  max-width: 600px;
   left: 15%;
   top: 30%;
   ${StyledHeading.h1} {

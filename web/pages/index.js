@@ -15,16 +15,22 @@ function urlFor(source) {
 const Index = (props) => {
   const { recipes = [] } = props
   console.log('🔥 recipes', recipes)
-
   return (
     <>
       <div className='full-width'>
         <HeroSection />
       </div>
-      <Layout>
+      <Layout setPaddingTop>
         <Grid>
           {recipes.map(
-            ({ _id, title = '', slug = '', _updatedAt = '', mainImage = '' }) =>
+            ({
+              _id,
+              title = '',
+              slug = '',
+              _updatedAt = '',
+              mainImage = '',
+              categories = [],
+            }) =>
               slug && (
                 <div key={_id}>
                   <Link href={'/recipe/[slug]'} as={`/recipe/${slug.current}`}>
@@ -35,13 +41,13 @@ const Index = (props) => {
                         height={300}
                         layout={'responsive'}
                       />
-                    </a>
-                  </Link>
-                  <Link href={'/recipe/[slug]'} as={`/recipe/${slug.current}`}>
-                    <a>
                       <Text>{title}</Text>
                     </a>
                   </Link>
+                  {categories &&
+                    categories.map((category, key) => {
+                      return <p key={key}>{category}</p>
+                    })}
                   <Text>({new Date(_updatedAt).toDateString()})</Text>
                 </div>
               )
@@ -55,8 +61,17 @@ const Index = (props) => {
 Index.getInitialProps = async () => ({
   recipes: await client.fetch(
     groq`
-    *[_type == 'recipe']
+    *[_type == 'recipe']{
+      _id,
+      title,
+      slug,
+      _updatedAt,
+      mainImage,
+      "categories": categories[]->title
+    }
+    
     `
+    // "categories": categories[]->title,
   ),
 })
 

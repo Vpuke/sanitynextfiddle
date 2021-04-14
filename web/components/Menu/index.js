@@ -13,6 +13,11 @@ const Menu = () => {
         </StyledMenu.ListItem>
         <StyledMenu.ListItem>
           <Heading type={'h2'} size={5}>
+            <Link href={'/recipes'}>Recipes</Link>
+          </Heading>
+        </StyledMenu.ListItem>
+        <StyledMenu.ListItem>
+          <Heading type={'h2'} size={5}>
             <Link href={'/about'}>About</Link>
           </Heading>
         </StyledMenu.ListItem>

@@ -5,6 +5,7 @@ import MobileMenu from '../../components/MobileMenu'
 import Menu from '../../components/Menu'
 import StyledHeader from './style'
 import Link from 'next/link'
+import Heading from '../../components/Heading'
 
 const Header = (props) => {
   const { color } = props
@@ -13,9 +14,9 @@ const Header = (props) => {
   return (
     <StyledHeader color={color}>
       <StyledHeader.LogoContainer>
-        <Link href='/'>
-          <span style={{ fontSize: '30px' }}>Veggie</span>
-        </Link>
+        <Heading>
+          <Link href='/'>Veggielicious</Link>
+        </Heading>
       </StyledHeader.LogoContainer>
       <StyledHeader.MenuContainer>
         <Menu />
