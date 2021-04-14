@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Burger from '../../components/Burger'
+import MobileMenu from '../../components/MobileMenu'
 import Menu from '../../components/Menu'
 import StyledHeader from './style'
 import Link from 'next/link'
@@ -17,9 +18,10 @@ const Header = (props) => {
         </Link>
       </StyledHeader.LogoContainer>
       <StyledHeader.MenuContainer>
+        <Menu />
         <Burger open={open} setOpen={setOpen} />
       </StyledHeader.MenuContainer>
-      <Menu open={open} setOpen={setOpen} />
+      <MobileMenu open={open} setOpen={setOpen} />
     </StyledHeader>
   )
 }

@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 const StyledBurger = styled.button`
+  @media (min-width: 801px) {
+    display: none;
+  }
   position: absolute;
   top: 25%;
   right: 0;

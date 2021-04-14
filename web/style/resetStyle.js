@@ -12,7 +12,6 @@ export const ResetStyle = createGlobalStyle`
 
 html,body{
   height: 100%;
-  /* overflow-x: hidden; */
 }
 
 html{
@@ -89,10 +88,31 @@ h5,
 h6 {
   font-weight: normal;
   font-size: 100%;
+  font-family: 'Bebas Neue', cursive;
 }
 h1{
   font-size: 40px;
 }
+h2{
+  font-size: 36px;
+}
+h3{
+  font-size: 32px;
+}
+h4{
+  font-size: 28;
+}
+h5{
+  font-size: 20;
+}
+h6{
+  font-size: 16px;
+}
+p{
+  font-size: 14px;
+  font-family: Roboto;
+}
+
 
 q:before,
 q:after {

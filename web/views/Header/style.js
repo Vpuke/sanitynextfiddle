@@ -21,6 +21,9 @@ StyledHeader.LogoContainer = styled.div`
 `
 
 StyledHeader.MenuContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   position: relative;
   height: 100%;
   width: 50%;

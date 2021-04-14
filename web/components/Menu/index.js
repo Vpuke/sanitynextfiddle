@@ -1,32 +1,24 @@
-// import React, { useEffect } from 'react'
-import PropTypes from 'prop-types'
-import StyledMenu from './style'
 import Link from 'next/link'
+import StyledMenu from './style'
 import Heading from '../Heading'
 
-const Menu = (props) => {
-  const { open, setOpen } = props
+const Menu = () => {
   return (
-    <StyledMenu open={open} className={'menu'} onClick={() => setOpen(!open)}>
-      <ul>
-        <li>
-          <Heading type={'h2'} size={1}>
-            <Link href='/'>/ Home</Link>
+    <StyledMenu>
+      <StyledMenu.List>
+        <StyledMenu.ListItem>
+          <Heading type={'h2'} size={5}>
+            <Link href={'/'}>Home</Link>
           </Heading>
-        </li>
-        <li>
-          <Heading type={'h2'} size={1}>
-            <Link href='/about'>/ About</Link>
+        </StyledMenu.ListItem>
+        <StyledMenu.ListItem>
+          <Heading type={'h2'} size={5}>
+            <Link href={'/about'}>About</Link>
           </Heading>
-        </li>
-      </ul>
+        </StyledMenu.ListItem>
+      </StyledMenu.List>
     </StyledMenu>
   )
-}
-
-Menu.propTypes = {
-  open: PropTypes.bool,
-  setOpen: PropTypes.func,
 }
 
 export default Menu
