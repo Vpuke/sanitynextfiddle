@@ -24,9 +24,6 @@ div,
 dl,
 dt,
 dd,
-ul,
-ol,
-li,
 h1,
 h2,
 h3,
@@ -55,24 +52,6 @@ img {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-  font-weight: normal;
-  font-style: normal;
 }
 
 caption,
@@ -109,8 +88,14 @@ h6{
   font-size: 16px;
 }
 p{
-  font-size: 14px;
+  font-size: 16px;
   font-family: Roboto;
+  margin-bottom: 10px;
+}
+li{
+  font-size: 16px;
+  font-family: Roboto;
+  margin-bottom: 10px;
 }
 
 

@@ -48,7 +48,7 @@ const Index = (props) => {
                     categories.map((category, key) => {
                       return <p key={key}>{category}</p>
                     })}
-                  <Text>({new Date(_updatedAt).toDateString()})</Text>
+                  <Text>{new Date(_updatedAt).toDateString()}</Text>
                 </div>
               )
           )}

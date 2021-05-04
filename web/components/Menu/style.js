@@ -20,6 +20,8 @@ StyledMenu.List = styled.ul`
 
 StyledMenu.ListItem = styled.li`
   margin-right: 10px;
+  margin-bottom: 0;
+  list-style: none;
 `
 
 export default StyledMenu

@@ -27,4 +27,11 @@ const StyledMobileMenu = styled.nav`
     }
   }
 `
+StyledMobileMenu.List = styled.ul``
+
+StyledMobileMenu.ListItem = styled.li`
+  margin-right: 10px;
+  list-style: none;
+`
+
 export default StyledMobileMenu

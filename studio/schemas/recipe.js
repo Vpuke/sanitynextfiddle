@@ -32,6 +32,22 @@ export default {
       },
     },
     {
+      name: 'secondImage',
+      title: 'Second Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'thirdImage',
+      title: 'Third image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',

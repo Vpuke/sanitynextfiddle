@@ -12,23 +12,23 @@ const MobileMenu = (props) => {
       className={'menu'}
       onClick={() => setOpen(!open)}
     >
-      <ul>
-        <li>
+      <StyledMobileMenu.List>
+        <StyledMobileMenu.ListItem>
           <Heading type={'h2'} size={1}>
             <Link href='/'>/ Home</Link>
           </Heading>
-        </li>
-        <li>
+        </StyledMobileMenu.ListItem>
+        <StyledMobileMenu.ListItem>
           <Heading type={'h2'} size={1}>
             <Link href='/recipes'>/ Recipes</Link>
           </Heading>
-        </li>
-        <li>
+        </StyledMobileMenu.ListItem>
+        <StyledMobileMenu.ListItem>
           <Heading type={'h2'} size={1}>
             <Link href='/about'>/ About</Link>
           </Heading>
-        </li>
-      </ul>
+        </StyledMobileMenu.ListItem>
+      </StyledMobileMenu.List>
     </StyledMobileMenu>
   )
 }

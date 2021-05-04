@@ -6,7 +6,7 @@ import Heading from '../../components/Heading'
 const HeroSection = (props) => {
   return (
     <StyledHeroSection>
-      <Image src={'/heroimage-min.jpeg'} layout={'fill'} />
+      <Image src={'/hero-resized-min.jpeg'} layout={'fill'} />
       <StyledHeroSection.Content>
         <StyledHeroSection.Inner>
           <Heading size={1} type={'h1'}>
